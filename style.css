@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0;
+}
+body {
+    font-size: 18px;
+    font-family: "Karma", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #000;
+
+
+}
+h1,h2,h3,h4{
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+a,ul {
+    text-decoration: none;
+    list-style: none;
+}
+#fix-clear {
+    padding: 0 40px;
+    margin: 0 130px;
+    height: 5vh;
+}
+#fix-clear .linegray {
+   content: ".";
+   width: 100%;
+   height: 1px;
+   margin: 30px auto 0 auto;
+   background-color: lightgray;
+}
+/**************************header**********************/
+header {
+    padding: 20px 15px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 78%;
+    margin: auto;
+}
+header .header-items{
+    z-index: 1;
+
+}
+header .header-items .navbar {
+    transform: translateX(-20px);
+    padding: 50px;
+    z-index: -1;
+
+}
+/**************************section menu**********************/
+#menu {
+    padding: 30px 40px;
+    margin: 0 130px;
+    font-size: 14px;
+}
+#menu .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    
+}
+#menu .menu-container .menu-items {
+    flex: 20%;
+    margin: 15px 8px;
+    height: 550px;
+    
+
+}
+#menu .menu-container .menu-items img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#menu .menu-items .span {
+    margin-top: 10px ;
+}
+#menu .numbers { 
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+#menu .numbers li {
+    display: inline;
+}
+#menu .numbers a {
+    padding: 6px 12px;
+    transition: all 0.2s;
+    color: #000;
+}
+#menu .numbers a:hover {
+    padding: 6px 12px;
+    background-color: #000;
+    color: #fff;
+}
+#menu .numbers .hold-number {
+    padding: 6px 12px;
+    background-color: #000;
+    color: #fff;
+}
+#menu .numbers .hold-number:hover {
+    padding: 6px 12px;
+    background-color: lightgray;
+    color: #000;
+}
+/**************************section about**********************/
+#about {
+    padding: 0 40px;
+    margin: 0 130px;
+    font-size: 14px;
+}
+#about h1 {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 0;
+}
+#about .about-me {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+#about .about-me img {
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    opacity: 0.6;
+   
+}
+#about .about-chef {
+    text-align: center;
+
+}
+#about .about-chef h3,
+#about .about-chef p {
+    font-weight: 100;
+
+}
+#about .about-chef p {
+    margin-bottom: 100px;
+}
+/**************************section footer**********************/
+#footer {
+    padding: 0 40px;
+    margin: 0 130px 40px 130px;
+    font-size: 14px;
+}
+#footer .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+}
+
+#footer .footer-container .group-items {
+    margin: 0 4px;
+    padding: 0 0 0 10px;
+}
+
+#footer .footer-container .group-items img {
+    width: 50%;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+#footer .footer-container .group-items .row {
+    display: flex;
+    padding: 15px ;
+    transition: all 0.3s;
+    
+}
+#footer .footer-container .group-items .row:hover {
+    background-color: lightgray;
+    
+    
+}
+#footer .footer-container .group-items .row p {
+    margin-top: 5px;
+    
+}
+#footer .footer-container .group-items .mini-linegray {
+    border-bottom: 1px lightgray solid;
+    width: 100%;
+    
+}
+#footer .footer-container .group-items li {
+    display:inline-block; 
+}
+
+#footer .footer-container .group-items a {
+    display:inline-block;
+    padding: 2px 4px;
+    margin: 4px 0;
+    font-size: 12px;
+    transition: all 0.2s;
+    color: #fff; 
+    background-color: darkgray;
+}
+#footer .footer-container .group-items .a1{
+    background-color: #000;
+    font-size: 16px;
+}
+
+#footer .footer-container .group-items a:hover {
+    padding: 2px 4px;
+    background-color: #000;
+    color: #fff;
+}
+/**************************qeuires**********************/
+@media only screen and ( max-width : 1256px ){
+    #fix-clear {
+        padding: 0 20px;
+        margin: 0 ;
+        height: 5vh;
+    }
+    header {
+        padding: 20px 15px;
+    }
+    .header-container {
+        justify-content: space-between;
+        width: 95%;
+    }
+    #menu {
+        padding: 30px 20px;
+        margin: 0 ;
+        font-size: 14px;
+        width: 100%;
+    }
+    #about {
+        padding: 0 20px;
+        margin: 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    #footer {
+        padding: 0 20px;
+        margin: 0 0 40px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+@media only screen and ( max-width : 700px ){
+    header {
+        padding: 20px 10px;
+    }
+    .header-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+    #menu {
+        padding: 30px 0;
+        margin: 0 ;
+        font-size: 14px;
+        width: 100%;
+    }
+    #menu .menu-container {
+        display: flex;
+        flex-direction: column;  
+    }
+    #menu .menu-container .menu-items {
+        width: 100%;
+        padding: 0 20px;
+        margin: 25px 0;
+    }
+    #about {
+        padding: 0 10px;
+        margin: 0 ;
+        font-size: 14px;
+        width: 100%;
+    }
+    #about .about-me {
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+    }
+    #about .about-chef p {
+        margin-bottom: 50px;
+    }
+    
+    
+    #footer {
+        padding: 0 5px;
+        margin: 0 10px 40px 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    #footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: start;
+    }
+    #footer .footer-container .group-items img {
+        height: 60px;
+    }
+    
+}
